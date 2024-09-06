@@ -1,70 +1,219 @@
-# Getting Started with Create React App
+NETFLIX Logo
+Netflix Clone Built Using React.JS & Firebase
+This is a clone of Netflix website built using React.JS as a Front-end & Firebase as Back-end. It's not a replica, and it doesn't have all the features of Netflix website. it's a similar version of Netflix with my own design touch, showing my abilities in React.JS to build something advanced like Netflix. It contains the home page, sign-in page, sign-up page, browse page, and movie player.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Take a look at the live version here: https://react-netflix-clone-beta.vercel.app :octocat: 😍
 
-## Available Scripts
+Table of Contents
+Project Walk-Through
+Home Page
+Sign-in Page
+Sign-up Page
+Browse Page
+Live Demo
+Technology Used
+How To Use
+Show Your Support
+Acknowledgments
+License
+Project Walk-Through
+Home Page
+ScreenShot ScreenShot ScreenShot ScreenShot ScreenShot ScreenShot
 
-In the project directory, you can run:
+The Home Page consists of 5 main sections:
 
-### `npm start`
+1) Header, which includes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Logo: it redirects you to the home page when you click on it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Sign-in button: it redirects you to the sign-in page.
 
-### `npm test`
+Feature title & subtitle: It shows the main sentences of the website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2) Optform: It's a text input field and a button, It redirects you to the sign-up page once you click on the button.
 
-### `npm run build`
+3) Jumbotron: This section contains some images and paragraphs beside it, showing the advantages of Netflix. The data of this Jumbotron came from jumbo.json file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4) Frequently Asked Questions: This section contains the FAQs in a form of accordion, when you click anywhere in the gray area of the question the answer appears below it, and then you can close the answer by clicking again on the same gray area of the question. The data of these FAQs came from faqs.json file.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5) Footer: It contains useful links users may need it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### The page is fully responsive to all mobile devices even the small ones. ###
 
-### `npm run eject`
+Sign-in Page
+ScreenShot ScreenShot
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The Sign-in Page consists of 3 main sections:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1) Header, which includes:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Logo: it redirects you to the home page when you click on it.
+2) Sign-in Form, which includes:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Email address input field.
 
-## Learn More
+Password input field.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sign-in Button: It has a validation option, if any field in the form is empty it will be disabled. If the form fields have any data it will be active and will send the data to the firebase database in the backend for authentication. It has also an error handling function.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Link to Sign-up Page: it redirects you to the sign-up page.
 
-### Code Splitting
+3) Footer: It contains useful links users may need it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### The page is fully responsive to all mobile devices even the small ones. ###
 
-### Analyzing the Bundle Size
+Sign-up Page
+ScreenShot ScreenShot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The Sign-up Page consists of 3 main sections:
 
-### Making a Progressive Web App
+1) Header, which includes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Logo: it redirects you to the home page when you click on it.
+2) Sign-up Form, which includes:
 
-### Advanced Configuration
+First Name input field.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Email address input field.
 
-### Deployment
+Password input field.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Sign-up Button: It has a validation option, if any field in the form is empty it will be disabled. If the form fields have any data it will be active and will send the data to the firebase database in the backend for registration. It has also an error handling function.
 
-### `npm run build` fails to minify
+Link to Sign-in Page: it redirects you to the sign-in page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3) Footer: It contains useful links users may need it.
+
+### The page is fully responsive to all mobile devices even the small ones. ###
+
+Browse Page
+ScreenShot ScreenShot ScreenShot ScreenShot
+
+The Browse Page consists of 5 main sections:
+
+1) Header, which includes:
+
+Logo: it redirects you to the home page whenever you click it.
+
+Categories Links: It shows the movies of a specific category when you click on it, for example, if you click on the films link it will be active and the browse page will show only the films. And if you click on the series link it will be active and the browse page will show only the series.
+
+Featured Movie Title & Description: It shows the title and description of the featured movie.
+
+Play Button: it shows the video player to play the movie.
+
+2) Movies Slides: It's a slides shows the movies based on their genre. The genres and all movie information had been retrieved from the Firebase database.
+
+3) Movie Card: It's an image represent the movie, when you hover over it became bigger and it will show its card feature if you click on it.
+
+4) Card Feature: it's another section that appears under the movie slide if you click on any movie card, it contains more information about the movie like title, description, a special background represent the movie, and play button. when you click on the play button it shows the video player to play the movie. and you can close the card feature by clicking on the close icon in the top right corner of the card feature.
+
+5) Video Player: it's a video player that has full controls, appears in the middle of the screen when you click on any play button, and you have to click on the play icon in the video player after it show up because it doesn't have an autoplay option currently. And when the video player show up the whole screen became an overlay, and only the video appears in the middle, and when you scroll up and down the video player moves with you. The video player should show the video of this movie which you clicked on it, but for this project purpose, it shows only one video as a sample for all movies.
+
+You can close the video player anytime by clicking anywhere else on the screen.
+
+ScreenShot
+
+6) Footer: It contains useful links users may need it.
+
+### The page is fully responsive to all mobile devices even the small ones. ###
+
+Live Demo
+Take a look on the live version here: https://react-netflix-clone-red.vercel.app/ :octocat: 😍
+
+Technology Used
+I have built this project using the following tools & techniques:
+
+React.JS
+React Router.
+React Forms.
+React Hooks.
+useState.
+useContext.
+useEffect.
+useHistory.
+useState.
+Compound Components.
+JSX.
+CSS Modules.
+Firebase.
+VSCode.
+StyleLint.
+EsLint.
+Github Actions.
+Github Pages.
+How To Use
+To be able to use this react app locally in a development environment you will need the following:
+
+You will need Git and Node.js installed on your computer.
+
+You will need an account on Firebase and you should create a project on your firebase account dedicated to this Netflix project.
+
+You will need the "./seed.js" file (which I added in this repo) to seed your firebase backend with movies information. OR you can use your seed file with your information if you want.
+
+Then From your terminal, you should do the following:
+
+# Clone this repository
+git clone https://github.com/AhmedTohamy01/React-Netflix-Clone
+
+# Go into the repository
+cd react-netflix-clone
+
+# Install dependencies
+npm install 
+Then you will need to create the ./src/lib/firebase.prod.js file in your local repo, The content of firebase.prod.js file will be like the following:
+import Firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+// 1) when seeding the database you'll have to uncomment this!
+// import { seedDatabase } from '../seed';
+
+const config = {
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+};
+
+const firebase = Firebase.initializeApp(config);
+// 2) when seeding the database you'll have to uncomment this!
+// seedDatabase(firebase);
+// 3) once you have populated the database (only run once!), re-comment
+// this so you don't get duplicate data
+
+export { firebase };
+Then you should use your firebase project information to fill the config information in firebase.prod.js file.
+const config = {
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+};
+Then you should seed your firebase database with the information in the seed.js file. , follow the following instructions to do this:
+1) Un-comment the following line:
+// import { seedDatabase } from '../seed'
+// seedDatabase(firebase);
+
+2) Save the firebase.prod.js.
+
+3) Wait 2 minutes and check your firebase database , if you found the data there then re-comment the above 2 lines.
+   If you didn't re-commet the above 2 lines after the seeding process, you will get dupliacted data in your 
+   firebase database.
+ 
+After seeding your firebase database with the movies information & reverting the Github Pages changes you can run the Netflix React App using the following command from your terminal:
+# Run the app
+npm start
+Now you can see the project in your browser as you see in the live demo link. Happy Hacking!
+Show Your Support
+Give a ⭐️ if you like this project!
+
+Acknowledgments
+Hat tip to everyone helped me to learn the techniques used in building this project.
+
+License
